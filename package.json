@@ -1,7 +1,7 @@
 {
-  "name": "Json-object-traverser",
+  "name": "Accordion",
   "version": "1.0.0",
-  "description": "This application parses JSON into an object and provides the ability retrieve the cahin call leading to the key.",
+  "description": "Accordion test",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
