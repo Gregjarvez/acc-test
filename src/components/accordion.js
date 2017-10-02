@@ -23,7 +23,7 @@ class Accordion extends React.Component {
 
   render() {
     return (
-      <div className="acccordion">
+      <div className="acccordion ">
         <button
           className={`accordion--button ${this.state.isOpened && 'accordion--button-pale'}`}
           onClick={this.onTogglerClick}
