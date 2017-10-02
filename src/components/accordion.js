@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Toggler from './toggler';
 
 class Accordion extends React.Component {
@@ -27,6 +28,7 @@ class Accordion extends React.Component {
           className={`accordion--button ${this.state.isOpened && 'accordion--button-pale'}`}
           onClick={this.onTogglerClick}
         >
+          <span className="accordion--section">{this.props.section}</span>
           <Toggler
             isOpened={this.state.isOpened}
           />
@@ -38,5 +40,9 @@ class Accordion extends React.Component {
     );
   }
 }
+
+Accordion.propTypes = {
+  section: PropTypes.string.isRequired
+};
 
 export default Accordion;
