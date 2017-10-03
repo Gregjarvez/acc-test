@@ -2,13 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Toggler = (props) => {
-  return (
-    <span
-      className={`toggler ${props.isOpened && 'isClosed'}`}
-    />
-  );
-};
+const Toggler = props => (
+  <span
+    className={`toggler ${props.isOpened && 'isClosed'}`}
+  />
+);
 
 Toggler.propTypes = {
   isOpened: PropTypes.bool.isRequired
